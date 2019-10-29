@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sanity/client": "^0.144.0",
     "next": "^9.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
