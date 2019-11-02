@@ -1,8 +1,12 @@
+import Header from "../header";
+
 const Layout = ({children}) => {
     return (
-        <main>
-            {children}
-            <style jsx global>{`
+        <>
+            <Header />
+            <main>
+                {children}
+                <style jsx global>{`
                 * {
                     box-sizing: border-box;
                     margin: 0;
@@ -43,8 +47,15 @@ const Layout = ({children}) => {
                     max-width: 1240px;
                     padding: 0 10px;
                 }
+                figure {
+                    display: inline-block;
+                }
+                figure + figure {
+                    float: right;
+                }
             `}</style>
-        </main>
+            </main>
+        </>
     )
 };
 

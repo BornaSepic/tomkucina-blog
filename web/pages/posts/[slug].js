@@ -23,17 +23,6 @@ const Post = (props) => {
                     {...client.config()}
                 />
             </article>
-
-            <style jsx>
-                {`
-                    figure {
-                        display: inline-block;
-                    }
-                    figure + figure {
-                        float: right;
-                    }
-                `}
-            </style>
         </Layout>
     )
 };
