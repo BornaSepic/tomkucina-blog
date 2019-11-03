@@ -13,11 +13,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^0.144.0",
     "@sanity/image-url": "^0.140.15",
     "next": "^9.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1"
   }
 }

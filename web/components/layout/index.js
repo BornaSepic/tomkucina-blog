@@ -36,6 +36,9 @@ const Layout = ({children}) => {
                     color: #222;
                     line-height: 1.1;
                 }
+                p {
+                    font-size: 0.9rem;
+                }
                 strong {
                     color: #222;
                 }
@@ -44,7 +47,7 @@ const Layout = ({children}) => {
                 }
                 main {
                     margin: 2rem auto;
-                    max-width: 1240px;
+                    max-width: 1080px;
                     padding: 0 10px;
                 }
                 figure {

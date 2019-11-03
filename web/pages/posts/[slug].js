@@ -1,21 +1,23 @@
 import client from "../../client";
 import BlockContent from '@sanity/block-content-to-react'
 import Layout from "../../components/layout";
+import {urlFor} from "../index";
 
 const Post = (props) => {
 
     const {
         title = 'Missing title',
-        name = 'Missing name',
-        categories,
-        authorImage,
+        mainImage,
         body
     } = props;
-    console.log(props);
 
     return (
         <Layout>
             <article>
+                <img
+                    src={urlFor(mainImage).url()}
+                    alt="Post cover image"
+                />
                 <h1>{title}</h1>
                 <BlockContent
                     blocks={body}
