@@ -14,8 +14,6 @@ const PostsList = (props) => {
 
           <style jsx>{`
               article {
-                width: calc(100% + 2rem);
-                margin-left: -1rem;
                 max-height: 400px;
                 height: 350px;
                 position: relative;

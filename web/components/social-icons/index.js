@@ -27,7 +27,6 @@ const socialIcons = [
 const SocialIcons = () => {
     return (
         <div className="social-icons--wrapper">
-
             <style jsx>
                 {`
                     .social-icons--wrapper {

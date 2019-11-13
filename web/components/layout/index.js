@@ -1,4 +1,5 @@
 import Header from "../header";
+import Footer from "../footer";
 
 const Layout = ({children}) => {
     return (
@@ -58,6 +59,7 @@ const Layout = ({children}) => {
                 }
             `}</style>
             </main>
+            <Footer />
         </>
     )
 };

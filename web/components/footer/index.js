@@ -1,13 +1,13 @@
 import Link from "next/link";
 import SocialIcons from "../social-icons";
 
-const Header = () => {
+const Footer = () => {
     return (
-        <header>
+        <footer>
+            <SocialIcons />
             <Link href="/">
                 <a className="title">tomkucina</a>
             </Link>
-            <SocialIcons />
             <style jsx>{`
                 .title {
                     color: #333;
@@ -20,8 +20,8 @@ const Header = () => {
                     font-weight: 900;
                 }
             `}</style>
-        </header>
+        </footer>
     );
 };
 
-export default Header;
+export default Footer;

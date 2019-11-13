@@ -2,6 +2,7 @@ import client from "../../client";
 import BlockContent from '@sanity/block-content-to-react'
 import Layout from "../../components/layout";
 import {urlFor} from "../index";
+import PostCoverImage from "../../components/post-cover-image";
 
 const Post = (props) => {
 
@@ -11,12 +12,15 @@ const Post = (props) => {
         body
     } = props;
 
+    console.log(props);
+
     return (
         <Layout>
             <article>
-                <img
-                    src={urlFor(mainImage).url()}
+                <PostCoverImage
+                    url={urlFor(mainImage).url()}
                     alt="Post cover image"
+                    hotspot={mainImage.hotspot}
                 />
                 <h1>{title}</h1>
                 <BlockContent
