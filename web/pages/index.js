@@ -17,31 +17,30 @@ const Index = (props) => {
             id: _id,
             caption: title,
             slug: slug,
-            imageUrl: urlFor(mainImage).url()
+            imageUrl: urlFor(mainImage).url(),
+            imageHotspot: mainImage.hotspot
         });
 
-    console.log(formattedPosts);
     return (
         <Layout>
             <PostsList posts={formattedPosts}/>
             <div className="links--wrapper">
                 {
                     props.linkBlocks.map(({_id, url = "", mainImage = {}, title = ""}) => (
-                        <div
-                            className="link--wrapper"
-                            style={{
-                                backgroundImage: `url(${urlFor(mainImage)})`
-                            }}
-                        >
-                            <Link key={_id} href={url}>
+                        <Link key={_id} href={url}>
+                            <a className="link--wrapper">
+                                <img
+                                    src={urlFor(mainImage)}
+                                />
                                 <span>{title}</span>
-                            </Link>
-                        </div>
+                            </a>
+                        </Link>
                     ))
                 }
             </div>
             <h2 className="quote">
-                “Usprkos svemu što su nas učili – nemoj, past ćeš!, nemoj, udarit ćeš se! - znanstveno je dokazano da je lakše uspjeti nego propasti.”
+                “Usprkos svemu što su nas učili – nemoj, past ćeš!, nemoj, udarit ćeš se! - znanstveno je dokazano da je
+                lakše uspjeti nego propasti.”
             </h2>
             <style jsx>{`
               article {
@@ -66,13 +65,19 @@ const Index = (props) => {
                 margin-top: 30px;
               }
               
+              .links--wrapper a {
+                    width: 100%;
+                    margin: 0 10px;
+                    text-decoration: none;
+              }
+              
               .link--wrapper {
+                cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0;
                 height: 180px;
-                width: 32%;
                 background-repeat: no-repeat;
                 background-size: cover;
               }
@@ -86,6 +91,11 @@ const Index = (props) => {
                 width: 90px;
                 text-align: center;
               }
+              
+              .link--wrapper img {
+                 position: absolute;
+                 z-index: -1;
+               }
               
               .quote {
                 text-align: center;

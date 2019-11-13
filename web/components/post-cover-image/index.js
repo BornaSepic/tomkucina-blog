@@ -8,7 +8,8 @@ const PostCoverImage = (props) => {
                 objectPosition: props.hotspot ? `${props.hotspot.x * 100}% ${props.hotspot.y * 100}%` : '',
                 width: '100vw',
                 maxWidth: '100%',
-                height: 'max-content'
+                height: 'max-content',
+                maxHeight: '100%'
             }}
         />
     )

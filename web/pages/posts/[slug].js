@@ -12,8 +12,6 @@ const Post = (props) => {
         body
     } = props;
 
-    console.log(props);
-
     return (
         <Layout>
             <article>
