@@ -9,9 +9,6 @@ const PostsList = (props) => {
             {props.posts.map((post, index) => (
                 <article
                     key={"post-list__" + index}
-                    style={{
-                        backgroundImage: `url(${post.imageUrl})`
-                    }}
                 >
                     <Link href={`/posts/${post.slug.current}`} as={`/posts/${post.slug.current}`}>
                         <a>

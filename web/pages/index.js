@@ -72,6 +72,7 @@ const Index = (props) => {
               }
               
               .link--wrapper {
+                position: relative;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -80,6 +81,7 @@ const Index = (props) => {
                 height: 180px;
                 background-repeat: no-repeat;
                 background-size: cover;
+                overflow: hidden;
               }
               
               .link--wrapper span {
@@ -88,7 +90,6 @@ const Index = (props) => {
                 font-size: 1.75rem;
                 color: white;
                 font-family: 'Playfair Display', serif;
-                width: 90px;
                 text-align: center;
               }
               
@@ -102,6 +103,15 @@ const Index = (props) => {
                 margin: 10% 0;
                 font-style: italic;
                 font-weight: 500;
+               }
+               
+               @media only screen and (max-width: 980px) {
+                 .links--wrapper {
+                    flex-flow: column;
+                 }
+                 .links--wrapper a {
+                    margin: 10px 0;
+                 }
                }
           `}</style>
         </Layout>

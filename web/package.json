@@ -21,7 +21,8 @@
     "@sanity/image-url": "^0.140.15",
     "next": "^9.1.1",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@zeit/next-css": "^1.0.1"
