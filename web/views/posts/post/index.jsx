@@ -1,11 +1,11 @@
-import client from "../../client";
-import BlockContent from '@sanity/block-content-to-react'
-import Layout from "../../components/layout";
-import {urlFor} from "../index";
-import PostCoverImage from "../../components/post-cover-image";
+import React from "react";
+import {urlFor} from "../../home";
+import Layout from "../../../components/layout";
+import PostCoverImage from "../../../components/post-cover-image";
+import BlockContent from "@sanity/block-content-to-react";
+import client from "../../../client";
 
-const Post = (props) => {
-
+const PostPageView = (props) => {
     const {
         title = 'Missing title',
         mainImage,
@@ -31,11 +31,4 @@ const Post = (props) => {
     )
 };
 
-Post.getInitialProps = async function (context) {
-    const {slug = ""} = context.query;
-    return await client.fetch(`
-        *[_type == "post" && slug.current == $slug][0]
-    `, {slug})
-};
-
-export default Post;
+export default PostPageView;

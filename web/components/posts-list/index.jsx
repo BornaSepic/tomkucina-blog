@@ -1,13 +1,14 @@
-import {urlFor} from "../../pages";
+import React from "react";
 import PostCoverImage from "../post-cover-image/";
 import Link from "next/link";
+import * as Styled from "./style";
+import {urlFor} from "../../views/home";
 
 const PostsList = (props) => {
-            console.log(props, 'ahoy');
     return (
         <div className="post-list--wrapper">
             {props.posts.map((post, index) => (
-                <article
+                <Styled.PostContainer
                     key={"post-list__" + index}
                 >
                     <Link href={`/posts/${post.slug.current}`} as={`/posts/${post.slug.current}`}>
@@ -17,30 +18,11 @@ const PostsList = (props) => {
                                 alt="Post cover image"
                                 hotspot={post.imageHotspot}
                             />
-                            <h3>{post.caption}</h3>
+                            <Styled.PostTitle>{post.caption}</Styled.PostTitle>
                         </a>
                     </Link>
-                </article>
+                </Styled.PostContainer>
             ))}
-
-            <style jsx>{`
-              article {
-                cursor: pointer;
-                max-height: 400px;
-                height: 350px;
-                position: relative;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-              }
-              
-              article h3 {
-                position: absolute;
-                bottom: 0;
-                padding: 6px 10px;
-                background-color: #f5f5f5de;
-            }
-          `}</style>
         </div>
     )
 };

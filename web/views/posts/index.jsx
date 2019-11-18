@@ -1,10 +1,9 @@
-import client from "../../client";
+import React from "react";
+import {urlFor} from "../home";
 import Layout from "../../components/layout";
-import {urlFor} from "../index";
 import PostsList from "../../components/posts-list";
 
-const Posts = (props) => {
-
+const PostsPageView = (props) => {
     const {posts = []} = props;
 
     const formattedPosts = posts.map(
@@ -23,10 +22,4 @@ const Posts = (props) => {
     )
 };
 
-Posts.getInitialProps = async () => ({
-    posts: await client.fetch(`
-        *[_type == "post"]
-    `)
-});
-
-export default Posts;
+export default PostsPageView;

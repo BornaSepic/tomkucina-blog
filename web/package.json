@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
@@ -22,7 +23,8 @@
     "next": "^9.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "styled-jsx": "^3.2.4"
   },
   "devDependencies": {
     "@zeit/next-css": "^1.0.1"

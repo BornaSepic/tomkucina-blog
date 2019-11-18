@@ -1,5 +1,7 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import * as Styled from "./style";
 
 const socialIcons = [
     {
@@ -26,23 +28,11 @@ const socialIcons = [
 
 const SocialIcons = () => {
     return (
-        <div className="social-icons--wrapper">
-            <style jsx>
-                {`
-                    .social-icons--wrapper {
-                        text-align: center;
-                        margin: 0;
-                    }
-                    a {
-                        margin: 0 8px;
-                        color: #3F729B;
-                    }
-                `}
-            </style>
+        <Styled.SocialWrapper>
             {socialIcons.map(icon => (
-                <a key={icon.url} target="_blank" href={icon.url}>{icon.icon}</a>
+                <Styled.SocialIcon key={icon.url} target="_blank" href={icon.url}>{icon.icon}</Styled.SocialIcon>
             ))}
-        </div>
+        </Styled.SocialWrapper>
     );
 };
 
