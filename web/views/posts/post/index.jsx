@@ -19,6 +19,7 @@ const PostPageView = (props) => {
                     url={urlFor(mainImage).url()}
                     alt="Post cover image"
                     hotspot={mainImage.hotspot}
+                    disableHover={true}
                 />
                 <h1>{title}</h1>
                 <BlockContent

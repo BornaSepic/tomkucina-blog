@@ -8,6 +8,7 @@ const PostCoverImage = (props) => {
             alt={props.alt}
             xPosition={props.hotspot && props.hotspot.x ? props.hotspot.x * 100 : 0}
             yPosition={props.hotspot && props.hotspot.y ? props.hotspot.y * 100 : 0}
+            disableHover={props.disableHover}
         />
     )
 };

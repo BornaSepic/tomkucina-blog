@@ -10,6 +10,6 @@ export const PostCover = styled.img`
      object-position: ${props => `${props.xPosition}% ${props.yPosition}%`};
      
      &:hover {
-        transform: scale(1.1);
+        transform: ${props => props.disableHover ? "" : "scale(1.1)"};
      }
 `;
