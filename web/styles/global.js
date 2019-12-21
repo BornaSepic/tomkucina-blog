@@ -44,4 +44,7 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1080px;
         padding: 0 10px;
     }
+    figure {
+        text-align: center;
+    }
 `;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const PostCover = styled.img`
+     margin-bottom: 50px;
      width: 100vw;
      max-width: 100%;
      height: max-content;
