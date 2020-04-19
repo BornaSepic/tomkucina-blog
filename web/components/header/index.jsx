@@ -1,15 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import SocialIcons from "../social-icons";
+import SiteNavigation from "../site-navigation";
 import * as Styled from "./style";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
             <Link href="/">
                 <Styled.PageTitle className="title">tomkucina</Styled.PageTitle>
             </Link>
-            <SocialIcons />
+            <SocialIcons header/>
+            <SiteNavigation header/>
         </header>
     );
 };
