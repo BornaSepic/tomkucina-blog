@@ -1,16 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import SiteNavigation from "../site-navigation";
 import SocialIcons from "../social-icons";
 import * as Styled from "./style";
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <footer>
+        <Styled.Footer>
+            <SiteNavigation />
             <SocialIcons />
-            <Link href="/">
-                <Styled.PageTitle className="title">tomkucina</Styled.PageTitle>
-            </Link>
-        </footer>
+        </Styled.Footer>
     );
 };
 
