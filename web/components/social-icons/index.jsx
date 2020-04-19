@@ -26,11 +26,17 @@ const socialIcons = [
     },
 ];
 
-const SocialIcons = () => {
+const SocialIcons = (props) => {
     return (
-        <Styled.SocialWrapper>
+        <Styled.SocialWrapper header={props.header}>
             {socialIcons.map(icon => (
-                <Styled.SocialIcon key={icon.url} target="_blank" href={icon.url}>{icon.icon}</Styled.SocialIcon>
+                <Styled.SocialIcon
+                    header={props.header}
+                    key={icon.url} 
+                    target="_blank"
+                    href={icon.url}>
+                    {icon.icon}
+                </Styled.SocialIcon>
             ))}
         </Styled.SocialWrapper>
     );
