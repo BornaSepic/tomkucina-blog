@@ -8,6 +8,6 @@ export const PageTitle = styled.a`
     margin-top: 5px;
     font-size: 2.5rem;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Elephant', serif;
     font-weight: 900;
 `;
