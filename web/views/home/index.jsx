@@ -3,6 +3,7 @@ import Link from "next/link";
 import imageUrlBuilder from '@sanity/image-url';
 import PostsList from "../../components/posts-list";
 import Layout from "../../components/layout";
+import Subscription from '../../components/subscription';
 import client from "../../client";
 import * as Styled from "./style";
 
@@ -25,6 +26,7 @@ const IndexPageView = (props) => {
 
     return (
         <Layout>
+            <Subscription />
             <PostsList posts={formattedPosts}/>
             <Styled.ImageLinksWrapper>
                 {
