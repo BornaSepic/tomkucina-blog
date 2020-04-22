@@ -30,6 +30,11 @@ export const GlobalStyle = createGlobalStyle`
         color: #222;
         line-height: 1.1;
     }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
     p {
         font-size: 0.9rem;
     }
@@ -39,12 +44,21 @@ export const GlobalStyle = createGlobalStyle`
     li {
         margin-top: 0.25rem;
     }
+    
+    header {
+        max-width: 1380px;
+        margin: auto;
+    }
+    
     main {
         margin: 2rem auto;
-        max-width: 1080px;
-        padding: 0 10px;
+        max-width: 1380px;
     }
     figure {
         text-align: center;
+    }
+    
+    section {
+        margin-bottom: 50px;
     }
 `;
