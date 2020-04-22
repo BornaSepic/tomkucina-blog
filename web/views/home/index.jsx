@@ -1,6 +1,7 @@
 import React from 'react';
 import imageUrlBuilder from '@sanity/image-url';
 import Layout from "../../components/layout";
+import Subscription from '../../components/subscription';
 import client from "../../client";
 import * as Styled from "./style";
 import Hero from "../../components/hero";
@@ -24,6 +25,7 @@ const IndexPageView = (props) => {
 
     return (
         <Layout>
+            <Subscription />
             <section>
                 <Hero />
             </section>
