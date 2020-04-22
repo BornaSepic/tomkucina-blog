@@ -10,7 +10,7 @@ const Subscription = (props) => {
             </Styled.Label>
             <Styled.Input type='text' id='subscription' width={"150px"} placeholder='Ime' />
             <Styled.Input type='text' id='email' width={"400px"} placeholder='E-mail adresa' />
-            <Styled.InputButton type='submit' inputButton value='Subscribe' /> 
+            <Styled.InputButton type='submit' inputButton value='SUBSCRIBE' /> 
         </Styled.Form>
     )
 }
