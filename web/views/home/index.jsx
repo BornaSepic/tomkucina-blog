@@ -25,10 +25,8 @@ const IndexPageView = (props) => {
 
     return (
         <Layout>
+            <Hero />
             <Subscription />
-            <section>
-                <Hero />
-            </section>
         </Layout>
     )
 };
