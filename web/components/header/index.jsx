@@ -6,13 +6,13 @@ import * as Styled from "./style";
 
 const Header = (props) => {
     return (
-        <header>
+        <Styled.Header>
             <Link href="/">
                 <Styled.PageTitle className="title">tomkucina</Styled.PageTitle>
             </Link>
             <SocialIcons header/>
             <SiteNavigation header/>
-        </header>
+        </Styled.Header>
     );
 };
 
