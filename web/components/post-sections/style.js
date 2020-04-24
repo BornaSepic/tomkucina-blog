@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-let props = props => props.flexdirection;
-
 export const OuterPostContainer = styled.div`
     font-size: 0px;
     display: flex;
