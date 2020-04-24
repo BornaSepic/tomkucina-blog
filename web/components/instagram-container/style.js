@@ -13,6 +13,7 @@ export const Paragraph = styled.p`
     padding: 4px;
     width: max-content;
     font-size: 20px;
+    user-select: none;
 `
 export const InstaLink = styled.a`
     text-decoration: none;
