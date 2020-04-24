@@ -11,3 +11,7 @@ export const PageTitle = styled.a`
     font-family: 'Elephant', serif;
     font-weight: 900;
 `;
+
+export const Header = styled.header`
+    min-width: 620px;
+`
