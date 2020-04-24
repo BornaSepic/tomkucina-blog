@@ -7,6 +7,7 @@ import * as Styled from "./style";
 import Hero from "../../components/hero";
 import PostSections from "../../components/post-sections";
 import AllPostsLink from "../../components/all-posts-link";
+import Articles from "../../components/articles";
 
 export function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -31,6 +32,7 @@ const IndexPageView = (props) => {
             <Subscription />
             <PostSections />
             <AllPostsLink />
+            <Articles />
         </Layout>
     )
 };
