@@ -5,7 +5,7 @@ const Subscription = (props) => {
     return (
         <section>
             <Styled.Form>
-                <Styled.Label for='subscription'>
+                <Styled.Label htmlfor='subscription'>
                     PRETPLATI SE NA NEWSLETTER
                 </Styled.Label>
                 <Styled.FormContent>
