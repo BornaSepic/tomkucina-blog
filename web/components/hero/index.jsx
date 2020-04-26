@@ -1,4 +1,5 @@
 import * as Styled from "./style";
+import Link from "../link";
 
 const Hero = (props) => (
     <Styled.HeroContainer>
@@ -12,7 +13,7 @@ const Hero = (props) => (
                 <br/>
                 <Styled.TextBackground>this.</Styled.TextBackground>
             </h1>
-            <a><Styled.TextBackground>find out more</Styled.TextBackground></a>
+            <Link href={"#"} text={"find out more"} spacingTop={true}/>
         </Styled.HeroContent>
     </Styled.HeroContainer>
 );
