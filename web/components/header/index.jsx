@@ -7,10 +7,12 @@ import * as Styled from "./style";
 const Header = (props) => {
     return (
         <Styled.Header>
-            <Link href="/">
-                <Styled.PageTitle className="title">tomkucina</Styled.PageTitle>
-            </Link>
-            <SocialIcons header/>
+            <Styled.HeaderWrapper>
+                <Link href="/">
+                    <Styled.PageTitle className="title">tomkucina.com</Styled.PageTitle>
+                </Link>
+                <SocialIcons header/>
+            </Styled.HeaderWrapper>
             <SiteNavigation header/>
         </Styled.Header>
     );

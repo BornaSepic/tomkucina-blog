@@ -4,35 +4,35 @@ import * as Styled from "./style";
 const postSectionTitle = [
     {
         title: 'Intervjui',
-        content: 'some content',
-        src: 'https://ucbaaf74148462f4b58f723510ea.previews.dropboxusercontent.com/p/thumb/AAxV2HMmy2uzD9joJ_z9pEHaioYPiGT7ceUcWALqIo25s9tGau98FXWE6IDFgykje4kWws4sixUvSqV1cG2HEdenifjlvEUcnUPe9IUNes3W2cPjjxOyYfWUj5gfeoIg-QhHc5mNJfR4hQnPeJEm3i_EglLOY0v6xb9dHfqSfvy000haattXxoeYs8LgKAuAc_5BJtDCkSKN_u_RFuTjbFYhcniuXQyQBXizDBDy9FCHgVwvGJa1o4II3s2763Ur6rgxR0EBDkBcHS_V-8WVbDzoXJ8PxGX639SMLwJmiieNtVbulZQM1nNT9_z4XGud9IrjLFCKHh5tTPNGvlTY6msXBmgXYtbFJFYE07l3YLTx2Halyj8qvjMc-CUhCm_zRs0UJZAN1C88spGMGKoHI__aiqkISaaBfbTYwzklqZ1LVQGuM3PG4t7oxyqo3MUqc_DPvD__iccWI_Ld4vO1IpV9/p.png?size=2048x1536&size_mode=3',
+        content: 'some content that should look good whene there is a bit more of it like this right?',
+        src: 'https://uc25ee3564249bf00f4fe51dd6f0.previews.dropboxusercontent.com/p/thumb/AAzQICEPMXVczlRoimZcB0fy593doJXxFATA-P_GGSnZQO_liY_3uoHGW2n3clXV_qiGJm7og1pH0bNkc_HX60muxOV6D9W_dLil__zaKtGkkQwaI85J1zH57IcepAlLrKkftXJYFhKrWWAh34LqnHFgfUrA5gqr8XOnyrUbvgPQWvKEB1_BjcB4PNOzJwBITBLp4b2ZeZNgDsVKJVHwUrPK69IjOY8DJaucAbGcmg7rw-TAylhriYB-nS4mIZJGfLCyDWSffMM1nddFzB57JnWcg3p3pqUxSLqLsajr92speJBjc5D0blOaWVhenFKge37E2wDJXz3PF8YA8lJKgN-Uj6Lj4L15Iab7vlbls_WTGYnxTKkEVjQmLEVt-QyW0oGwnRfrleKda7FHcenaQOhvbP79rDn4s6MpimCTw7E1Kr8BtMMd5zjlVQadlRpHyA3mnDL5NFMZ7dtT0b1CnuTb/p.png?size=2048x1536&size_mode=3',
         direction: 'row'
     },
     {
         title: 'Putovanja i ostalo',
         content: 'some content',
-        src: 'https://ucc236c254f7b93fae603c37c1b8.previews.dropboxusercontent.com/p/thumb/AAwEJH4ySx5N_i_i-fcSGmcjF_XgidOaE3aTXTwHTSFUPgp7bqZpvBqVZ8Mk1IpiUTeC3wCYpNUjGaXurcwWYM8xuiUlhfBhnWI6TGPUhqDcB6WOoYSuHdORJTItkyKGp_-KR2PguwKYacu8rwEPD1ecksuFrUIniH5g183p6okvBvID2OVKXN8Ea7Fov4xt851ZbwpggiKhD7Hwvp6PupoAvl_OtOynPkJ2AZN0uKJbyWANcXJc8pRY3EZEABC5MVpriPf8dWOqpB8FC55Lo0BReHx-8bq5vS1S3JHhepyDMVeu1BtikktLM6o2GFlNqL5he9Qgf1wpXIIH3J2wmmm75BnMiLFsl6HQ77OAp8A5j89VcRNaKmtm0sKdXTosBtymoZbj_RRk7QOPmR7WtUyIr11ce6r7xSMxnXN4Itw9MOiBOgUDm162tKPpd4225qHej9BgzsixdjezLgRjvvWH/p.png?fv_content=true&size_mode=5',
+        src: 'https://ucc487b4346ec9d491ef2b74e8ef.previews.dropboxusercontent.com/p/thumb/AAxCBHFg_hkhzi_axasArJVf7QmeOtjo6VOBMV_qsRs6lukXueYZUutSeM-hKbVlgLzUb7aEDcaWr_bb3ujJNlAX-fI8meKnw4jMRj0T--ePUTHIZZLALOEjx0i7b__fTj5OgBSbXe3J_MH06bYry6aNW3xsDMLCbujfYnm99LQZCyA8Qw9xPr-s3SpUyBiJzq4vOD6iU97cRoVk_9Zeb0PpxTN4uuqdWR-VQxrPPV88Eyv2XlxVfQH4WorZFxZVoBoi8OfYPXP68s8rCVZ_jI6okKLmKSjR6FCtukao_Wa4k7C6wXdqwZhK9_T25haBbaAWZ03u7KskjrCdsOyGE69_ymIvP0YwK6kRJFZ1qXM6HABCFSVdCsEVhEQj2Ksp8Soh4sWX-g-MPezFv0lsy12gqz3Gpmad6qPJXQlP6G8ys7cIdd2toKTIa30ZKLTHngLjoH_BoEUHedC6Um4EVlrn/p.png?fv_content=true&size_mode=5',
         direction: 'row-reverse'
     }
 ];
 
 const PostSections = (props) => {
     return (
-        <section>
-            {
-                postSectionTitle.map(item => (
-                    <Styled.OuterPostContainer flexdirection={item.direction}>
+        <section className={"no-space"}>
+            {postSectionTitle.map((item, index) => {
+                const orientation = index % 2 === 0 ? "left" : "right";
+                return (
+                    <Styled.OuterPostContainer key={`CATEGORY_${index}`} orientation={orientation}>
                         <Styled.PostImageContainer>
                             <Styled.Image src={item.src}/>
                         </Styled.PostImageContainer>
-                        <Styled.PostContainer>
+                        <Styled.PostContainer orientation={orientation}>
                             <Styled.PostTitle>{item.title}</Styled.PostTitle>
                             <p>{item.content}</p>
                         </Styled.PostContainer>
                     </Styled.OuterPostContainer>
-                    )
-                )
-            }
+                );
+            })}
         </section>
     )
 }

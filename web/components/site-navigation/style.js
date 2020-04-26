@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 
 export const NavbarWrapper = styled.div`
-${props => props.header ? {
-    "margin" : "5px;",
-    "text-align": "center;",
-    "color" : "black"
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    ${props => props.header ? {
+        "color" : "black",
+        "padding-top" : "15px;",
 
-} : {
-    "text-align" : "center;",
-    "padding-top" : "20px;",
-    "color" : "white;"
-
-}}
+    } : {
+        "padding-top" : "20px;",
+        "color" : "white;"
+    }}
 `;
 export const NavLinks = styled.a`
-    margin: 0 30px;
     cursor: pointer;
+    margin-top: 0;
 `;

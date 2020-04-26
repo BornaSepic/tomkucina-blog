@@ -1,7 +1,7 @@
 import React from 'react';
 import imageUrlBuilder from '@sanity/image-url';
 import Layout from "../../components/layout";
-import Subscription from '../../components/subscription';
+import Subscription from '../../components/newsletter';
 import client from "../../client";
 import * as Styled from "./style";
 import Hero from "../../components/hero";

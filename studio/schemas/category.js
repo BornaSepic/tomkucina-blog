@@ -4,6 +4,14 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'categoryImage',
+      title: 'Catergory image',
+      type: 'image',
+      options: {
+        hotspot: true
+      }
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string'

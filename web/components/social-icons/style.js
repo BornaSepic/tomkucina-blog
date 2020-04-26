@@ -9,8 +9,6 @@ export const SocialWrapper = styled.div`
 ${props => props.header ? {
     "text-align" : "right;",
     "margin": "0px;",
-    "border-bottom" : "solid 1px #9c9a9a",
-
 } : {
     "text-align" : "center;",
     "border-bottom": "none;",

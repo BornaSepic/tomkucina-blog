@@ -3,7 +3,7 @@ import * as Styled from "./style";
 
 const AllPostsLink = () => {
     return (
-        <section>
+        <section className={"no-space"}>
             <Styled.Container>
                 <Styled.PostsLink href="/">SVE OBJAVE PRONAĐI OVDJE</Styled.PostsLink>
             </Styled.Container>

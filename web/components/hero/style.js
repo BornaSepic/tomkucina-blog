@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
     cursor: pointer;
-    background-image: url('https://ucedf9041e89c45c58d92c91e28e.previews.dropboxusercontent.com/p/thumb/AAyelvo5PuTBTUzSd4AfwTjMhV2-6Tz52LumpTQOKXHtruOPFAtAlh6WvCWL9TA_s3Ppc7M53bMJFOpwYAv7ixaSBwxgN-LV3Be8UYSINVeExukmWoIYvbMDaX9oKx043jd9RuX99y_ISFBIgMVRdCTJW6BxTn_pA-JO1c3rSNYAkcT4mD5JrCHLZr0Vmj4LWfCkOQ-YVuqG_zktbbVU9bH4R4W2tdaYT6d_yI5a2pstUoZGVD4RYvpdoqnHzP9wZWiNSjMvZHwt4uOma3gsxbmmgKrKfzlVXq2AH-vEYRcpbcZOkEGG6beuL-QxnBmifZ6Itx5ieSnp1Zjuql0Ow4blV0QUZ3Kq3OFSDGW6e7NH53iL5Y1ZE92SHhU8iAI-HuBM40eTC9fHVVgvC12bjxXAltWrxhNl8owl2Ii5kc26RQ/p.png?size=2048x1536&size_mode=3');
+    background-image: url('https://uc2b0afe141f339a6df73eb5aca8.previews.dropboxusercontent.com/p/thumb/AAy142gPM7nq0HJwAIXXXX88zdc0wBv8SgSEBeFqqdi-vZ6Ih_QRAcvDYkQmmS_HUpD4zUqDq0_7uiwSxTazDgyKes8X5Cmb2Bfx5OIX_MUHlyAzOAZsBE6EhAu6GiPM6k2cC8aoqAp2SUb0zAB3dk9fXxztFHchgyUj69XNpntrkRlezXyJ4hYUNjSrFV3oAH7njkAbryit3hiBAQowDwAG3YkpvKyhHEB8iUWbIHK3tV7Kh3rHJHvE6d8Uo0vPcjs5TIWcoyoSI232QqGr7Uc4st42aNeS14rUoieKyZED5nF5IB5AzMOAxuLnrt6RkkpcoOPHIH4Mug93lqmE3YzckeemKqPV3yJt6ySjJeRpO07kUohkI1qw2du5AiDhk9rCZ0P4BT7yPNKh6Cftw8WmN-KNCfjmD1SuVyFTPW1Adw/p.png?size=2048x1536&size_mode=3');
     min-height: 600px;
     display: flex;
     justify-content: center;

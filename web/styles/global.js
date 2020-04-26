@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
+      font-family: 'elephant';
+      src: url('/fonts/ELEPHNT.woff');
+    }
+ 
     * {
         box-sizing: border-box;
         margin: 0;
@@ -50,15 +55,17 @@ export const GlobalStyle = createGlobalStyle`
         margin: auto;
     }
     
-    main {
-        margin: 2rem auto;
-        max-width: 1380px;
-    }
     figure {
         text-align: center;
     }
     
     section {
+        margin: 2rem auto;
         margin-bottom: 50px;
+        max-width: 1380px;
+        
+        &.no-space {
+            margin: auto;
+        }
     }
 `;
