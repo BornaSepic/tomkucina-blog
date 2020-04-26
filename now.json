@@ -1,5 +1,5 @@
 {
   "version": 2,
   "alias": ["tomkucina.blog"],
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "builds": [{ "src": "web/package.json", "use": "web/@now/static-build" }]
 }
