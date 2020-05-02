@@ -17,13 +17,15 @@ const IndexPageView = (props) => {
     const {posts = []} = props;
     const {categories = []} = props;
     const {homepageContent = []} = props;
+
+    console.log(homepageContent)
     const formattedPosts = posts.map(
         ({_id, title = '', slug = '', excerpt = '', mainImage = {}}) => slug && {
             id: _id,
             title: title,
             excerpt: excerpt,
             slug: slug,
-            imageUrl: urlFor(mainImage).url(),
+            imageUrl: urlFor(mainImage).width(920).url(),
             imageHotspot: mainImage.hotspot
         });
 
@@ -42,7 +44,11 @@ const IndexPageView = (props) => {
     };
 
     const newsletterImageObject = {
-        imageUrl: urlFor(homepageContent[0].newsletterImage)
+        imageUrl: urlFor(homepageContent[0].newsletterImage).width(920)
+    };
+
+    const allPostsImageObject = {
+        imageUrl: urlFor(homepageContent[0].allPostsImage).width(920)
     };
 
     return (
@@ -50,7 +56,7 @@ const IndexPageView = (props) => {
             <Hero image={heroImageObject}/>
             <Subscription image={newsletterImageObject}/>
             <Categories categories={formattedCategories}/>
-            <AllPostsLink/>
+            <AllPostsLink image={allPostsImageObject}/>
             <Articles articles={formattedPosts}/>
         </Layout>
     )

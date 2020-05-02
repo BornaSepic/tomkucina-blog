@@ -12,11 +12,10 @@ export const CategoryWrapper = styled.div`
 
 export const CategoryContainer = styled.article`
     margin: 0px;
-    padding: 0 15px;
     text-align: ${props => props.orientation === "left" ? "left" : "right"};
     flex-basis: 0;
     flex-grow: 1;
-    
+        
     @media only screen and (max-width: 840px) {
         text-align: center;
         margin: 20px 0 30px;
@@ -26,6 +25,9 @@ export const CategoryContainer = styled.article`
 export const CategoryImageContainer = styled.div`
     flex-basis: 0;
     flex-grow: 1;
+    @media only screen and (min-width: 841px) {
+        margin: ${props => props.orientation === "left" ? `0 15px 0 0` : `0 0 0 15px`};
+    }
 `;
 
 export const Image = styled.img`

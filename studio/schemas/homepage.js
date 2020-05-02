@@ -14,10 +14,12 @@ export default {
     {
       name: 'newsletterImage',
       title: 'Newsletter image',
-      type: 'image',
-      options: {
-        hotspot: true
-      }
+      type: 'image'
+    },
+    {
+      name: 'allPostsImage',
+      title: 'All posts image',
+      type: 'image'
     }
   ]
 }

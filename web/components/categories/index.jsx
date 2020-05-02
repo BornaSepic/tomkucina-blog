@@ -7,7 +7,7 @@ const Categories = (props) => (
             const orientation = index % 2 === 0 ? "left" : "right";
             return (
                 <Styled.CategoryWrapper key={category.id} orientation={orientation}>
-                    <Styled.CategoryImageContainer>
+                    <Styled.CategoryImageContainer orientation={orientation}>
                         <Styled.Image src={category.imageUrl}/>
                     </Styled.CategoryImageContainer>
                     <Styled.CategoryContainer orientation={orientation}>
