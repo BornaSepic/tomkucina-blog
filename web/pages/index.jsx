@@ -10,6 +10,9 @@ IndexPage.getInitialProps = async () => ({
     `),
     categories: await client.fetch(`
        *[_type == "category"]
+    `),
+    homepageContent: await client.fetch(`
+       *[_type == "homepage"]    
     `)
 });
 

@@ -8,7 +8,7 @@ const Articles = (props) => (
         <Styled.ArticlesContainer>
             {
                 props.articles.map(article => (
-                        <Styled.ArticleContent>
+                        <Styled.ArticleContent key={article.id}>
                             <PostCoverImage
                                 url={article.imageUrl}
                                 alt="Post cover image"

@@ -14,9 +14,9 @@ export function urlFor(source) {
 }
 
 const IndexPageView = (props) => {
-
     const {posts = []} = props;
     const {categories = []} = props;
+    const {homepageContent = []} = props;
     const formattedPosts = posts.map(
         ({_id, title = '', slug = '', excerpt = '', mainImage = {}}) => slug && {
             id: _id,
@@ -36,12 +36,19 @@ const IndexPageView = (props) => {
             imageHotspot: categoryImage.hotspot
         });
 
-    console.log(formattedPosts);
+    const heroImageObject = {
+        imageUrl: urlFor(homepageContent[0].mainImage).url(),
+        imageHotspot: homepageContent[0].mainImage.hotspot
+    };
+
+    const newsletterImageObject = {
+        imageUrl: urlFor(homepageContent[0].newsletterImage)
+    };
 
     return (
         <Layout>
-            <Hero/>
-            <Subscription/>
+            <Hero image={heroImageObject}/>
+            <Subscription image={newsletterImageObject}/>
             <Categories categories={formattedCategories}/>
             <AllPostsLink/>
             <Articles articles={formattedPosts}/>

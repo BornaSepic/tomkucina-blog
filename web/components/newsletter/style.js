@@ -29,7 +29,7 @@ export const Label = styled.label`
 `;
 
 export const Form = styled.form`
-    background-image: url('https://uc5bf4ad4028de41edb01d40d5a1.previews.dropboxusercontent.com/p/thumb/AAz6P8tYUlvsgwkIaJ13ymtoEfmddxfAwCgrZ9BqWSoVAXqxfEDUWunf-Iv6Ah1S8czQvQjxN6XF5OHPwgukI2eyXGqyLO9ZpSZ5Lc31r6ec59M8FQWyDCVs1mBq2k35nOugiqmHnzSlJ59vmj5D6ln2AgrMCJWkn8RSBfEFbfjujdd9pw8CSP_T3EoRJaXpotLKpOyPeuM3JVRLius7708HbCbakQs3MIUCI7miVjphiS_U_CjMZiWlduwog_MSRz6mlO6Tw1Vbhj5r5jmk9tskSUScDyBsIo5pSdtp0RNrsLPWUbhExpuaxfd-3ioqUcA6qwFOmur5H_gwOvRFGdber3nJ4w_0UrvtfRKVSBNLTA/p.png?size=2048x1536&size_mode=3');
+    background-image: ${props => `url('${props.backgroundImage}')`};
     display: flex;
     font-size: 11px;
     justify-content: space-around;

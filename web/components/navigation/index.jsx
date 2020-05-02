@@ -4,7 +4,7 @@ import * as Styled from "./style";
 
 const navItems = [
     {
-        ref : '/home',
+        ref: '/home',
         content: 'Home'
     },
     {
@@ -24,13 +24,13 @@ const navItems = [
 const SiteNavigation = (props) => {
     return (
         <Styled.NavbarWrapper header={props.header}>
-                {
-                    navItems.map(item => (
-                        <Link href={item.ref}>
-                            <Styled.NavLinks>{item.content.toUpperCase()}</Styled.NavLinks>
-                        </Link>
-                    ))
-                }
+            {
+                navItems.map(item => (
+                    <Link href={item.ref} key={item.content.toUpperCase() + props.header}>
+                        <Styled.NavLinks>{item.content.toUpperCase()}</Styled.NavLinks>
+                    </Link>
+                ))
+            }
         </Styled.NavbarWrapper>
     );
 };

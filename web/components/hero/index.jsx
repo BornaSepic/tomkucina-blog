@@ -2,7 +2,7 @@ import * as Styled from "./style";
 import Link from "../link";
 
 const Hero = (props) => (
-    <Styled.HeroContainer>
+    <Styled.HeroContainer backgroundUrl={props.image.imageUrl}>
         <Styled.HeroContent>
             <h1>
                 <Styled.TextBackground>tom.</Styled.TextBackground>

@@ -4,7 +4,7 @@ import * as Styled from "./style";
 const Subscription = (props) => {
     return (
         <section>
-            <Styled.Form>
+            <Styled.Form backgroundImage={props.image.imageUrl}>
                 <Styled.Label htmlfor='subscription'>
                     PRETPLATI SE NA NEWSLETTER
                 </Styled.Label>
