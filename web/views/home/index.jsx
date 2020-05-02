@@ -32,12 +32,12 @@ const IndexPageView = (props) => {
             id: _id,
             title: title,
             description: description,
-            imageUrl: urlFor(categoryImage).url(),
+            imageUrl: urlFor(categoryImage).width(980).url(),
             imageHotspot: categoryImage.hotspot
         });
 
     const heroImageObject = {
-        imageUrl: urlFor(homepageContent[0].mainImage).url(),
+        imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
         imageHotspot: homepageContent[0].mainImage.hotspot
     };
 
