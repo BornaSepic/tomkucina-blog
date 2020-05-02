@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavbarWrapper = styled.div`
-    max-width: 500px;
+    max-width: 680px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -18,4 +18,5 @@ export const NavbarWrapper = styled.div`
 export const NavLinks = styled.a`
     cursor: pointer;
     margin-top: 0;
+    letter-spacing: 1px;
 `;

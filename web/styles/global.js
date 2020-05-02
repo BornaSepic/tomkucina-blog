@@ -60,7 +60,7 @@ export const GlobalStyle = createGlobalStyle`
     section {
         margin: 2rem auto;
         margin-bottom: 50px;
-        max-width: 1380px;
+        max-width: 920px;
         
         &.no-space {
             margin: auto;

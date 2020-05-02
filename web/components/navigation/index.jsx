@@ -4,11 +4,11 @@ import * as Styled from "./style";
 
 const navItems = [
     {
-        ref: '/home',
+        ref: '/',
         content: 'Home'
     },
     {
-        ref: '/blog',
+        ref: '/posts',
         content: 'Blog'
     },
     {

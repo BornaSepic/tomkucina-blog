@@ -14,6 +14,11 @@ export const ArticlesContainer = styled.div`
 export const ArticleContent = styled.article`
     padding: 10px;
     margin-top: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    img {
+        max-height: 250px;
+    }
 `;
 
 export const Image = styled.img`
