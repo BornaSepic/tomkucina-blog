@@ -6,9 +6,14 @@ const PostPage = (props) => <PostPageView {...props} />;
 
 PostPage.getInitialProps = async function (context) {
     const {slug = ""} = context.query;
-    return await client.fetch(`
-        *[_type == "post" && slug.current == $slug][0]
-    `, {slug})
+    return ({
+        postContent: await client.fetch(`
+            *[_type == "post" && slug.current == $slug][0]
+        `, {slug}),
+        homepageContent: await client.fetch(`
+            *[_type == "homepage"]    
+        `),
+    })
 };
 
 export default PostPage;

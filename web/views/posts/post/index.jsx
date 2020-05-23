@@ -5,22 +5,23 @@ import PostCoverImage from "../../../components/post-cover-image";
 import BlockContent from "@sanity/block-content-to-react";
 import client from "../../../client";
 import * as Styled from "./style";
+import Hero from "../../../components/hero";
 
 const PostPageView = (props) => {
     const {
         title = 'Missing title',
-        mainImage,
         body
-    } = props;
+    } = props.postContent;
+
+    const {homepageContent = []} = props;
+    const heroImageObject = {
+        imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
+        imageHotspot: homepageContent[0].mainImage.hotspot
+    };
 
     return (
         <Layout>
-            <PostCoverImage
-                url={urlFor(mainImage).url()}
-                alt="Post cover image"
-                hotspot={mainImage.hotspot}
-                disableHover={true}
-            />
+            <Hero image={heroImageObject}/>
             <Styled.BlogPostContainer>
                 <Styled.BlogPostTitle>{title}</Styled.BlogPostTitle>
                 <BlockContent
