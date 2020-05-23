@@ -2,7 +2,6 @@ import React from "react";
 import PostCoverImage from "../post-cover-image/";
 import Link from "next/link";
 import * as Styled from "./style";
-import {urlFor} from "../../views/home";
 
 const PostsList = (props) => {
     function formatDate(date) {
@@ -13,6 +12,7 @@ const PostsList = (props) => {
     }
     return (
         <section className="post-list--wrapper">
+            <Styled.CategoryTitle>{props.category ? props.category : "Svi postovi"}</Styled.CategoryTitle>
             {props.posts.map((post, index) => (
                 <Styled.PostContainer
                     key={"post-list__" + index}

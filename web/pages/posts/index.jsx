@@ -13,7 +13,8 @@ PostsPage.getInitialProps = async (context) => {
         `),
         homepageContent: await client.fetch(`
        *[_type == "homepage"]    
-    `)
+    `),
+        category: context.query.category
     });
 };
 

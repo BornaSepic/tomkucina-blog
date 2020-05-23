@@ -12,9 +12,6 @@ const PostsPageView = (props) => {
         imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
         imageHotspot: homepageContent[0].mainImage.hotspot
     };
-
-    console.log(posts);
-
     const formattedPosts = posts.map(
         ({_id, _createdAt, title = '', slug = '', mainImage = {}, excerpt = ""}) => slug && {
             id: _id,
@@ -30,7 +27,8 @@ const PostsPageView = (props) => {
     return (
         <Layout>
             <Hero image={heroImageObject}/>
-            <PostsList posts={formattedPosts}/>
+
+            <PostsList posts={formattedPosts} category={props.category}/>
         </Layout>
     )
 };

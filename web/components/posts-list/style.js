@@ -15,11 +15,9 @@ export const Link = styled.a`
 `;
 
 export const PostContainer = styled.article`
-     position: relative;
-     overflow: hidden;
-     
-     margin-top: 0;
-     
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
     display: flex;
     height: 100%;
     color: #222;
@@ -46,7 +44,7 @@ export const PostContainer = styled.article`
      }
      
      @media only screen and (min-width: 821px) {
-        height: 250px;
+        height: 100%;
         min-height: 250px;
         max-height: 280px;
      }
@@ -68,6 +66,13 @@ export const PostContainer = styled.article`
         }
      }
 `;
+
+export const CategoryTitle = styled.h1 `
+    font-family: 'elephant',serif;
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+`;
+
 
 export const PostTitle = styled.h2`
            font-family: 'elephant',serif;
