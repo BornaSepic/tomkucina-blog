@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-    cursor: pointer;
     background-image: ${props => `url('${props.backgroundUrl}')`};
     min-height: 600px;
     display: flex;

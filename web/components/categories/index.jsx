@@ -6,7 +6,7 @@ const Categories = (props) => (
         {props.categories.map((category, index) => {
             const orientation = index % 2 === 0 ? "left" : "right";
             return (
-                <Styled.CategoryWrapper key={category.id} orientation={orientation}>
+                <Styled.CategoryWrapper href={`/posts?category=${category.title}`} key={category.id} orientation={orientation}>
                     <Styled.CategoryImageContainer orientation={orientation}>
                         <Styled.Image src={category.imageUrl}/>
                     </Styled.CategoryImageContainer>

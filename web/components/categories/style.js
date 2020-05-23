@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-export const CategoryWrapper = styled.div`
+export const CategoryWrapper = styled.a`
     font-size: 0px;
     display: flex;
     flex-flow: ${props => props.orientation === "left" ? "row" : "row-reverse"};
+    text-decoration: none;
+    color: #222;
     
     @media only screen and (max-width: 840px) {
         flex-flow: column-reverse;

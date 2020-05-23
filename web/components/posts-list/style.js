@@ -1,19 +1,81 @@
 import styled from 'styled-components';
 
+export const Link = styled.a`
+    color: white;
+    background: black;
+    padding: 4px 8px;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    display: inline-block;
+    
+    margin-top: 10px;
+`;
+
 export const PostContainer = styled.article`
-         position: relative;
-         overflow: hidden;
-         cursor: pointer;
-         max-height: 400px;
-         height: 350px;
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: 50% 50%;
+     position: relative;
+     overflow: hidden;
+     
+     margin-top: 0;
+     
+    display: flex;
+    height: 100%;
+    color: #222;
+    text-decoration: none;
+    
+    > div {
+        flex-basis: 0;
+        flex-grow: 1;
+        margin-top: 0;
+        
+        + div {
+            margin-left: 15px;
+        }
+    }
+ 
+     p {
+        white-space: pre-wrap;
+        font-size: 18px;
+        margin-top: 10px;
+     }
+     
+     + article {
+        margin-top: 20px;
+     }
+     
+     @media only screen and (min-width: 821px) {
+        height: 250px;
+        min-height: 250px;
+        max-height: 280px;
+     }
+     
+     @media only screen and (max-width: 820px) {
+        flex-flow: column;
+        padding: 0 10px;
+        
+        > div + div {
+            margin-left: 0;
+        }
+        
+        img {    
+            height: 250px;
+        }
+        
+        a {
+            display: block;
+        }
+     }
+`;
+
+export const PostTitle = styled.h2`
+           font-family: 'elephant',serif;
+           font-size: 1.5rem;
+           font-weight: 400;
     `;
 
-export const PostTitle = styled.h3`
-         position: absolute;
-         bottom: 0;
-         padding: 6px 10px;
-         background-color: #f5f5f5de;
+export const Image = styled.img`
+    width: 100%;
+    height: 100%;
     `;

@@ -18,7 +18,6 @@ const IndexPageView = (props) => {
     const {categories = []} = props;
     const {homepageContent = []} = props;
 
-    console.log(homepageContent)
     const formattedPosts = posts.map(
         ({_id, title = '', slug = '', excerpt = '', mainImage = {}}) => slug && {
             id: _id,
