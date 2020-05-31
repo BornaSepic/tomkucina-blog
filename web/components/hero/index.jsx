@@ -13,7 +13,7 @@ const Hero = (props) => (
                 <br/>
                 <Styled.TextBackground>this.</Styled.TextBackground>
             </h1>
-            <Link href={"#"} text={"find out more"} spacingTop={true}/>
+            <Link href={"/about"} text={"find out more"} spacingTop={true}/>
         </Styled.HeroContent>
     </Styled.HeroContainer>
 );

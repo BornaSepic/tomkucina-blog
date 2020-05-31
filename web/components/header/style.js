@@ -35,5 +35,12 @@ export const HeaderWrapper = styled.div`
         position: absolute;
         bottom: 0;
         right: 0;
+        
+        @media only screen and (max-width: 640px) {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
     }
 `;

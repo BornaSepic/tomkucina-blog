@@ -6,7 +6,7 @@ const AllPostsLink = (props) => {
     return (
         <section className={"no-space"}>
             <Styled.Container backgroundImage={props.image.imageUrl}>
-                <Link href="/" text={"SVE OBJAVE PRONAĐI OVDJE"} />
+                <Link href="/posts" text={"SVE OBJAVE PRONAĐI OVDJE"} />
             </Styled.Container>
         </section>
     )
