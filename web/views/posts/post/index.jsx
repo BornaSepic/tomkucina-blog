@@ -21,6 +21,10 @@ const PostPageView = (props) => {
 
     return (
         <Layout>
+            <div id="fb-root"></div>
+            <script async defer crossOrigin="anonymous"
+                    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=540563953169088&autoLogAppEvents=1"
+                    nonce="YGpmrPko"></script>
             <Hero image={heroImageObject}/>
             <Styled.BlogPostContainer>
                 <Styled.BlogPostTitle>{title}</Styled.BlogPostTitle>
@@ -31,7 +35,8 @@ const PostPageView = (props) => {
                     {...client.config()}
                 />
                 <BlogPostShare blogTitle={title} blogHero={heroImageObject.imageUrl}/>
-
+                <div className="fb-comments" data-href={`https://tomkucina.com` + props.slug} data-numposts="55"
+                     data-width=""></div>
             </Styled.BlogPostContainer>
         </Layout>
     )
