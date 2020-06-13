@@ -78,6 +78,7 @@ export const PostTitle = styled.h2`
            font-family: 'elephant',serif;
            font-size: 1.5rem;
            font-weight: 400;
+           margin-bottom: 10px;
     `;
 
 export const Image = styled.img`

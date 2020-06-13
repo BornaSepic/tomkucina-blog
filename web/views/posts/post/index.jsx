@@ -1,11 +1,11 @@
 import React from "react";
 import {urlFor} from "../../home";
 import Layout from "../../../components/layout";
-import PostCoverImage from "../../../components/post-cover-image";
 import BlockContent from "@sanity/block-content-to-react";
 import client from "../../../client";
 import * as Styled from "./style";
 import Hero from "../../../components/hero";
+import BlogPostShare from "../../../components/post-share/BlogPostShare";
 
 const PostPageView = (props) => {
     const {
@@ -24,11 +24,14 @@ const PostPageView = (props) => {
             <Hero image={heroImageObject}/>
             <Styled.BlogPostContainer>
                 <Styled.BlogPostTitle>{title}</Styled.BlogPostTitle>
+                <BlogPostShare postSlug={props.slug} blogTitle={title} blogHero={heroImageObject.imageUrl}/>
                 <BlockContent
                     blocks={body}
                     imageOptions={{h: 640, fit: 'max'}}
                     {...client.config()}
                 />
+                <BlogPostShare blogTitle={title} blogHero={heroImageObject.imageUrl}/>
+
             </Styled.BlogPostContainer>
         </Layout>
     )
