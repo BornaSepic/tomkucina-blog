@@ -28,13 +28,11 @@ const ContactPageView = (props) => {
                     nonce="YGpmrPko"></script>
             <Styled.BlogPostContainer>
                 <Styled.BlogPostTitle>{title}</Styled.BlogPostTitle>
-                <BlogPostShare postSlug={props.slug} blogTitle={title} blogHero={heroImageObject.imageUrl}/>
                 <BlockContent
                     blocks={body}
                     imageOptions={{h: 640, fit: 'max'}}
                     {...client.config()}
                 />
-                <BlogPostShare blogTitle={title} blogHero={heroImageObject.imageUrl}/>
                 <div className="fb-comments" data-href={`https://tomkucina.com` + props.slug} data-numposts="55"
                      data-width=""></div>
             </Styled.BlogPostContainer>
