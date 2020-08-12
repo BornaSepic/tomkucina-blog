@@ -8,6 +8,8 @@ const PostsPageView = (props) => {
     const {posts = []} = props;
     const {homepageContent = []} = props;
 
+    console.log(props)
+
     const heroImageObject = {
         imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
         imageHotspot: homepageContent[0].mainImage.hotspot

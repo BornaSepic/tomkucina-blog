@@ -6,7 +6,7 @@ const IndexPage = (props) => <IndexPageView {...props} />;
 
 IndexPage.getInitialProps = async () => ({
     posts: await client.fetch(`
-      *[_type == "post"][0...2]
+      *[_type == "post" && slug.current != "about" && slug.current != "contact"][0...2] | order(_createdAt desc)
     `),
     categories: await client.fetch(`
        *[_type == "category"]

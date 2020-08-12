@@ -9,7 +9,7 @@ PostsPage.getInitialProps = async (context) => {
 
     return ({
         posts: await client.fetch(`
-          *[_type == "post" ${context.query.category ? queryWithCategory : ""}]
+          *[_type == "post" && slug.current != "about" && slug.current != "contact" ${context.query.category ? queryWithCategory : ""}] | order(_createdAt desc)
         `),
         homepageContent: await client.fetch(`
        *[_type == "homepage"]    
