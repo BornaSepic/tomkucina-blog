@@ -14,6 +14,9 @@ PostsPage.getInitialProps = async (context) => {
         homepageContent: await client.fetch(`
        *[_type == "homepage"]    
     `),
+        instagramImages: await client.fetch(`
+       *[_type == "instagram"]    
+    `),
         category: context.query.category
     });
 };

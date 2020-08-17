@@ -23,3 +23,28 @@ export const InstaLink = styled.a`
     align-items: center;
     font-weight: bold;
 `
+
+export const InstagramImageContainer = styled.div`
+    display: grid;
+    grid-template-columns: ${(props) => props.count > 6 ? 'repeat(6, 180px)' : 'repeat(' + props.count + ',180px)'};
+                grid-gap: 15px;
+
+    a {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }  
+    }
+    
+    @media only screen and (max-width: 1190px)  {
+        grid-template-columns: repeat(3,180px);
+    }
+    
+    @media only screen and (max-width: 640px)  {
+        grid-template-columns: repeat(2,140px);
+    }
+`;

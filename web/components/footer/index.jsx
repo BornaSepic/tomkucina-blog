@@ -8,7 +8,7 @@ import * as Styled from "./style";
 const Footer = (props) => {
     return (
         <Styled.Footer>
-            <InstagramContainer />
+            <InstagramContainer images={props.images} />
             <SiteNavigation />
             <SocialIcons />
         </Styled.Footer>

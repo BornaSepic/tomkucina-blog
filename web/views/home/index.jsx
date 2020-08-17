@@ -17,6 +17,8 @@ const IndexPageView = (props) => {
     const {posts = []} = props;
     const {categories = []} = props;
     const {homepageContent = []} = props;
+    const {instagramImages = []} = props;
+
 
     const formattedPosts = posts.map(
         ({_id, title = '', slug = '', excerpt = '', mainImage = {}}) => slug && {
@@ -37,6 +39,7 @@ const IndexPageView = (props) => {
             imageHotspot: categoryImage.hotspot
         });
 
+
     const heroImageObject = {
         imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
         imageHotspot: homepageContent[0].mainImage.hotspot
@@ -51,7 +54,7 @@ const IndexPageView = (props) => {
     };
 
     return (
-        <Layout>
+        <Layout instagramImages={instagramImages}>
             <Hero image={heroImageObject}/>
             <Subscription image={newsletterImageObject}/>
             <Categories categories={formattedCategories}/>

@@ -3,7 +3,7 @@ import Header from "../header";
 import Footer from "../footer";
 import {GlobalStyle} from "../../styles/global";
 
-const Layout = ({children}) => {
+const Layout = ({instagramImages, children}) => {
     return (
         <>
             <GlobalStyle/>
@@ -11,7 +11,7 @@ const Layout = ({children}) => {
             <main>
                 {children}
             </main>
-            <Footer/>
+            <Footer images={instagramImages}/>
         </>
     )
 };

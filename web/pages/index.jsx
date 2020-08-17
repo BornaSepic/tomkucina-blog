@@ -13,6 +13,9 @@ IndexPage.getInitialProps = async () => ({
     `),
     homepageContent: await client.fetch(`
        *[_type == "homepage"]    
+    `),
+    instagramImages: await client.fetch(`
+       *[_type == "instagram"]    
     `)
 });
 

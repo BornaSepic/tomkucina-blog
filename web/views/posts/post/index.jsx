@@ -12,6 +12,7 @@ const PostPageView = (props) => {
         title = 'Missing title',
         body
     } = props.postContent;
+    const {instagramImages = []} = props;
 
     const {homepageContent = []} = props;
     const heroImageObject = {
@@ -20,7 +21,7 @@ const PostPageView = (props) => {
     };
 
     return (
-        <Layout>
+        <Layout instagramImages={instagramImages}>
             <div id="fb-root"></div>
             <script async defer crossOrigin="anonymous"
                     src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=540563953169088&autoLogAppEvents=1"

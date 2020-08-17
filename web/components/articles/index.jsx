@@ -11,7 +11,7 @@ const Articles = (props) => (
                         <Styled.ArticleContent key={article.id}>
                             <PostCoverImage
                                 url={article.imageUrl}
-                                alt="Post cover image"
+                                alt={`${article.title} cover image`}
                                 hotspot={article.imageHotspot}
                                 disableHover={true}
                             />

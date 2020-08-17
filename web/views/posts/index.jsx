@@ -7,8 +7,8 @@ import Hero from "../../components/hero";
 const PostsPageView = (props) => {
     const {posts = []} = props;
     const {homepageContent = []} = props;
+    const {instagramImages = []} = props;
 
-    console.log(props)
 
     const heroImageObject = {
         imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
@@ -27,7 +27,7 @@ const PostsPageView = (props) => {
         });
 
     return (
-        <Layout>
+        <Layout instagramImages={instagramImages}>
             <Hero image={heroImageObject}/>
 
             <PostsList posts={formattedPosts} category={props.category}/>

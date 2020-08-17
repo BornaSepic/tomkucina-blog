@@ -14,6 +14,7 @@ const AboutPageView = (props) => {
         body
     } = props.postContent || {};
     const {homepageContent = []} = props;
+    const {instagramImages = []} = props;
 
     const heroImageObject = {
         imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
@@ -21,7 +22,7 @@ const AboutPageView = (props) => {
     };
 
     return (
-        <Layout>
+        <Layout instagramImages={instagramImages}>
             <Hero image={heroImageObject}/>
             <div id="fb-root"></div>
             <script async defer crossOrigin="anonymous"

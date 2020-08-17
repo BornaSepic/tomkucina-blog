@@ -17,7 +17,7 @@ export const PageTitle = styled.a`
         margin-bottom: 25px;
         font-size: 2.5rem;
     }
-    @media only screen and (max-width: 340px) {
+    @media only screen and (max-width: 440px) {
         margin-bottom: 25px;
         font-size: 2rem;
     }

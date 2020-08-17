@@ -20,7 +20,7 @@ const PostsList = (props) => {
                    <div>
                        <PostCoverImage
                            url={post.imageUrl}
-                           alt="Post cover image"
+                           alt={`${post.title} cover image`}
                            hotspot={post.imageHotspot}
                            disableHover={true}
                        />
