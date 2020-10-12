@@ -9,6 +9,7 @@ export const Container = styled.div`
     
     @media only screen and (max-width: 640px) {
       display: block;
+      text-align: center;
     }
 `;
 export const Paragraph = styled.p`
@@ -57,7 +58,7 @@ export const InstagramImageContainer = styled.div`
     }
     
     @media only screen and (max-width: 640px)  {
-        grid-template-columns: repeat(2,140px);
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
 `;
