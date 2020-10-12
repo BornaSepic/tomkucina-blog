@@ -6,7 +6,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`
+    
+    @media only screen and (max-width: 640px) {
+      display: block;
+    }
+`;
 export const Paragraph = styled.p`
     color: white;
     background: black;
@@ -14,7 +18,11 @@ export const Paragraph = styled.p`
     width: max-content;
     font-size: 20px;
     user-select: none;
-`
+    
+    @media only screen and (max-width: 640px) {
+      width: 100%;
+    }
+`;
 export const InstaLink = styled.a`
     text-decoration: none;
     color: black;
@@ -22,6 +30,10 @@ export const InstaLink = styled.a`
     display: flex;
     align-items: center;
     font-weight: bold;
+    
+    @media only screen and (max-width: 640px) {
+      justify-content: center;
+    }
 `
 
 export const InstagramImageContainer = styled.div`
@@ -46,5 +58,6 @@ export const InstagramImageContainer = styled.div`
     
     @media only screen and (max-width: 640px)  {
         grid-template-columns: repeat(2,140px);
+        width: 100%;
     }
 `;
