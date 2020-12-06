@@ -30,6 +30,7 @@ const PostPageView = (props) => {
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={excerpt} />
                 <meta property="og:image" content={postImage} />
+                <meta property="og:image:secure" content={postImage} />
             </Head>
             <Layout instagramImages={instagramImages}>
                 <div id="fb-root"></div>
