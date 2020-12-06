@@ -12,7 +12,8 @@ const PostPageView = (props) => {
     const {
         title = 'Missing title',
         body,
-        excerpt
+        excerpt,
+        mainImage
     } = props.postContent;
     const {instagramImages = []} = props;
 
@@ -21,14 +22,14 @@ const PostPageView = (props) => {
         imageUrl: urlFor(homepageContent[0].mainImage).width(1920).url(),
         imageHotspot: homepageContent[0].mainImage.hotspot
     };
-
+    const postImage = urlFor(mainImage).url();
     return (
         <>
             <Head>
                 <title>{title} - Tom Kucina</title>
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={excerpt} />
-                <meta property="og:image" content={heroImageObject.imageURL} />
+                <meta property="og:image" content={postImage} />
             </Head>
             <Layout instagramImages={instagramImages}>
                 <div id="fb-root"></div>
