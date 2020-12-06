@@ -6,11 +6,13 @@ import client from "../../../client";
 import * as Styled from "./style";
 import Hero from "../../../components/hero";
 import BlogPostShare from "../../../components/post-share/BlogPostShare";
+import Head from "next/head";
 
 const PostPageView = (props) => {
     const {
         title = 'Missing title',
-        body
+        body,
+        excerpt
     } = props.postContent;
     const {instagramImages = []} = props;
 
@@ -21,25 +23,33 @@ const PostPageView = (props) => {
     };
 
     return (
-        <Layout instagramImages={instagramImages}>
-            <div id="fb-root"></div>
-            <script async defer crossOrigin="anonymous"
-                    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=540563953169088&autoLogAppEvents=1"
-                    nonce="YGpmrPko"></script>
-            <Hero image={heroImageObject}/>
-            <Styled.BlogPostContainer>
-                <Styled.BlogPostTitle>{title}</Styled.BlogPostTitle>
-                <BlogPostShare postSlug={props.slug} blogTitle={title} blogHero={heroImageObject.imageUrl}/>
-                <BlockContent
-                    blocks={body}
-                    imageOptions={{h: 640, fit: 'max'}}
-                    {...client.config()}
-                />
-                <BlogPostShare postSlug={props.slug} blogTitle={title} blogHero={heroImageObject.imageUrl}/>
-                <div className="fb-comments" data-href={`https://tomkucina.com` + props.slug} data-numposts="55"
-                     data-width=""></div>
-            </Styled.BlogPostContainer>
-        </Layout>
+        <>
+            <Head>
+                <title>{title} - Tom Kucina</title>
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={excerpt} />
+                <meta property="og:image" content={heroImageObject.imageURL} />
+            </Head>
+            <Layout instagramImages={instagramImages}>
+                <div id="fb-root"></div>
+                <script async defer crossOrigin="anonymous"
+                        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=540563953169088&autoLogAppEvents=1"
+                        nonce="YGpmrPko"></script>
+                <Hero image={heroImageObject}/>
+                <Styled.BlogPostContainer>
+                    <Styled.BlogPostTitle>{title}</Styled.BlogPostTitle>
+                    <BlogPostShare postSlug={props.slug} blogTitle={title} blogHero={heroImageObject.imageUrl}/>
+                    <BlockContent
+                        blocks={body}
+                        imageOptions={{h: 640, fit: 'max'}}
+                        {...client.config()}
+                    />
+                    <BlogPostShare postSlug={props.slug} blogTitle={title} blogHero={heroImageObject.imageUrl}/>
+                    <div className="fb-comments" data-href={`https://tomkucina.com` + props.slug} data-numposts="55"
+                         data-width=""></div>
+                </Styled.BlogPostContainer>
+            </Layout>
+            </>
     )
 };
 
