@@ -20,7 +20,7 @@
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^0.144.0",
     "@sanity/image-url": "^0.140.15",
-    "next": "^9.3.5",
+    "next": "^11.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-share": "^4.2.0",
